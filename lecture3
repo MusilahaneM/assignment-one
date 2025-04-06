@@ -1,0 +1,18 @@
+def classify_number():
+    while True:
+        user_input = input("Please enter an integer: ")
+        try:
+            number = int(user_input)
+            if number > 0:
+                return "Positive"
+            elif number < 0:
+                return "Negative"
+            else:
+                return "Zero"
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
+
+# Example of calling the function
+result = classify_number()
+print(result)
+
